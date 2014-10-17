@@ -1,0 +1,13 @@
+Package: libapache2-mod-ox
+Source: ox
+Version: 0.1
+Architecture: amd64
+Maintainer: gluu inc <support.gluu.org>
+Original-Maintainer: Muttakinur R. Chowdhury <shouro@gluu.org>
+Installed-Size: 3MB
+Depends: apache2 (>= 2.4.7), oxd-server (>= 1.0.3), memcached (>= 1.4)
+Section: httpd
+Priority: extra
+Homepage: http://www.gluu.org/docs/admin-guide/mod-ox/
+Description: ox module for Apache2 (mod_ox)
+ gluu ox mod for apache2.

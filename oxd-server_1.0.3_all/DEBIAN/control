@@ -1,0 +1,13 @@
+Package: oxd-server
+Source: oxd
+Version: 1.0.3
+Architecture: amd64
+Maintainer: Gluu inc <support@gluu.org>
+Original-Maintainer: Muttakinur R. Chowdhury <shouro@gluu.org>
+Installed-Size: 14MB
+Depends: openjdk-7-jre-headless
+Section: server
+Priority: extra
+Homepage: http://gluu.org
+Description: oxd server
+ oxd server is intendent to run on localhost

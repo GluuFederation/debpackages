@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+echo 'Stoping oxd server...'
+service oxd stop
+rm -f /opt/oxd-server/log/oxd*
+rm -f /opt/oxd-server/pid
+update-rc.d -f oxd remove
+
+exit 0

@@ -1,0 +1,34 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          oxd
+# Required-Start:    $local_fs $remote_fs $network
+# Required-Stop:     $local_fs $remote_fs $network
+# Should-Start:      $named
+# Should-Stop:       $named
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start oxd.
+# Description:       Start the oxd server.
+### END INIT INFO
+
+
+case "${1}" in
+start)
+  sh /opt/oxd-server/bin/oxd-start.sh
+  exit ${?}
+  ;;
+stop)
+  sh /opt/oxd-server/bin/oxd-stop.sh
+  exit ${?}
+  ;;
+restart)
+  sh /opt/oxd-server/bin/oxd-stop.sh
+  sh /opt/oxd-server/bin/oxd-start.sh
+  exit ${?}
+  ;;
+*)
+  echo "Usage:  $0 { start | stop | restart }"
+  exit 1
+  ;;
+esac
