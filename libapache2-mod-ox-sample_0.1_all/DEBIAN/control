@@ -1,0 +1,12 @@
+Package: libapache2-mod-ox-sample
+Version: 0.1
+Architecture: all
+Maintainer: gluu inc <support.gluu.org>
+Original-Maintainer: Muttakinur R. Chowdhury <shouro@gluu.org>
+Installed-Size: 21KB
+Depends: gluu-server (>= 1.9), libapache2-mod-ox (>= 0.1)
+Section: httpd
+Priority: optional
+Homepage: http://www.gluu.org/docs/admin-guide/mod-ox/
+Description: ox module sample config for Apache2 (mod_ox)
+ gluu ox mod sample config for apache2.

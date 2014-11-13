@@ -1,0 +1,11 @@
+#!/bin/sh
+# postinst script for libapache2-mod-ox-sample
+set -e
+
+FILE = /etc/apache2/mods-available/mod_ox_welcome.conf
+
+if [ -f "$FILE" ]; then
+   sed s/{host}/`hostname`/ "$FILE" > "$FILE"
+fi
+
+exit 0
